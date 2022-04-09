@@ -47,19 +47,21 @@ export default class Estudiantes extends Component {
         return (
             <div style={{width:50 + "%"}}>
                 <h3>Estudiantes</h3>
-                <table className="table table-dark" style={{width:100 + "%"}}>
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col">Nota</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {renderEstudiantes}
-                    </tbody>
-                </table>
+                <div className="table-responsive">
+                    <table className="table table-dark" style={{width:100 + "%"}}>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Nota</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {renderEstudiantes}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         )
     }

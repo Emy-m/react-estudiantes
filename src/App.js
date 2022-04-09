@@ -3,9 +3,6 @@ import './App.css';
 import Estudiantes from './Estudiante/Estudiantes';
 
 function App() {
-  const meVoy = () => {
-    console.log('Me voy');
-  }
 
   return (
     <div className="App">
